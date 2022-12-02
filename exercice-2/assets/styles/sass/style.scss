@@ -1,0 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "vars";
+@import "reset";
+
+#home{
+   
+    display:grid;
+        grid-template-columns:1fr 3fr 1fr;
+        grid-template-rows:1fr 18fr;
+        background-color:#455E88;
+   & > header{
+        height:100%;
+        background-color:#292929;
+        color:white;
+        grid-column:1/4;
+    }
+  & >  main{
+        height:100%;
+        grid-column:2/3;
+        grid-row:2/4;
+      background-color:white;
+       
+        
+        display:grid;
+        grid-template-rows:1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+          & >section{   display:flex;
+            
+            
+        }
+        & > header{
+             & >  figure{
+                      
+                              & > img{
+                                  width: 100%;
+                              }
+        }
+        
+      
+        & > section:nth-child(1){
+            
+         
+            & >  figure{
+      width:100%;
+      & > img{
+          width: 100%;
+      }
+  }
+  
+        }
+        
+        
+  }}}
+  
