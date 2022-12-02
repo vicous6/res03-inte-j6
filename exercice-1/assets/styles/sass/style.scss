@@ -1,0 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "vars";
+@import "reset";
+
+body{
+    height:100vh;
+    
+    section{
+        height:100%;
+    }
+}
+
+
+#container{
+    
+    display:grid;
+    grid-template-rows: 1fr 1fr
+}
+
+.container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr
+    
+}
+#sec1{
+    
+    background: linear-gradient(to top, $darkBlue, $blue ,$green);
+}
+#sec2{
+    
+     background: radial-gradient($darkBlue, $blue, $green);
+}
+
+#sec3{
+    
+    background: radial-gradient($green, $blue, $darkBlue);
+}
+
+#sec4{
+    
+    background: radial-gradient($pink, $yellow ,$green ,$blue ,$darkBlue);
+}
+#sec5{
+    
+    background: radial-gradient($pink, $yellow, $green, $blue, $darkBlue, $blue, $green, $yellow,$pink);
+}
+#sec6{
+     background: linear-gradient(to bottom left, $darkBlue, $blue, $green, $yellow, $pink);
+}
+
